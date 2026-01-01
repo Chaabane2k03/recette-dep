@@ -3,7 +3,7 @@ import { Pool } from 'pg';
 
 // Configuration pour Neon
 const pool = new Pool({
-  connectionString: process.env.POSTGRES_URL,
+  connectionString: process.env.POSTGRES_URL_NON_POOLING,
   ssl: { rejectUnauthorized: false },
   max: 20, // Nombre max de connexions
   idleTimeoutMillis: 30000,
