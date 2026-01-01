@@ -2,8 +2,7 @@
   "crons": [
     {
       "path": "/api/cron/weekly-report",
-      "schedule": "0 18 * * 0",
-      "timeZone": "Europe/Paris"
+      "schedule": "0 18 * * 0"
     }
   ]
 }
