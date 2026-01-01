@@ -1,0 +1,15 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/weekly-report",
+      "schedule": "0 18 * * 0",
+      "timeZone": "Europe/Paris"
+    }
+  ],
+  "env": {
+    "POSTGRES_URL": "@postgres_url",
+    "RESEND_API_KEY": "@resend_api_key",
+    "CRON_SECRET": "@cron_secret",
+    "ADMIN_EMAILS": "@admin_emails"
+  }
+}
