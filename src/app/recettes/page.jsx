@@ -109,7 +109,7 @@ export default function RecettesPage() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm text-gray-500">Total recettes</p>
-                <p className="text-2xl font-bold text-gray-900">{total.toFixed(2)}€</p>
+                <p className="text-2xl font-bold text-gray-900">{total.toFixed(2)}TND</p>
               </div>
               <div className="bg-green-100 p-3 rounded-lg">
                 <Euro className="w-8 h-8 text-green-600" />
@@ -250,7 +250,7 @@ export default function RecettesPage() {
                     {/* Montant */}
                     <div className="col-span-2 text-right">
                       <div className="text-xl font-bold text-green-700">
-                        {parseFloat(recette.montant).toFixed(2)}€
+                        {parseFloat(recette.montant).toFixed(2)}TND
                       </div>
                     </div>
 
@@ -284,7 +284,7 @@ export default function RecettesPage() {
                     {filteredRecettes.length} recette{filteredRecettes.length > 1 ? 's' : ''}
                   </div>
                   <div className="text-lg font-bold text-green-700">
-                    Total: {total.toFixed(2)}€
+                    Total: {total.toFixed(2)}TND
                   </div>
                 </div>
               </div>

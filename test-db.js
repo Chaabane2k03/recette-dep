@@ -115,7 +115,7 @@ async function connectToNeon() {
     const sample = await client.query('SELECT * FROM recettes ORDER BY date DESC LIMIT 3');
     console.log('\n📋 Aperçu des données:');
     sample.rows.forEach(row => {
-      console.log(`   ${row.date.toISOString().split('T')[0]} | ${row.service} | ${row.montant}€ | ${row.mode_paiement}`);
+      console.log(`   ${row.date.toISOString().split('T')[0]} | ${row.service} | ${row.montant}TND | ${row.mode_paiement}`);
     });
     
     console.log('\n🎉 BASE DE DONNÉES PRÊTE POUR LE RESTAURANT!');

@@ -11,7 +11,7 @@ export default function HomePage() {
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {/* Carte Nouvelle Recette */}
-        <Link href="/recettes/nouvelle">
+        <Link href="/recettes">
           <div className="bg-white rounded-lg shadow p-6 hover:shadow-md transition-shadow cursor-pointer border-2 border-green-100">
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-xl font-semibold text-gray-800">Nouvelle Recette</h2>
@@ -23,7 +23,7 @@ export default function HomePage() {
         </Link>
         
         {/* Carte Nouvelle Dépense */}
-        <Link href="/depenses/nouvelle">
+        <Link href="/depenses">
           <div className="bg-white rounded-lg shadow p-6 hover:shadow-md transition-shadow cursor-pointer border-2 border-red-100">
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-xl font-semibold text-gray-800">Nouvelle Dépense</h2>
@@ -46,28 +46,7 @@ export default function HomePage() {
           </div>
         </Link>
         
-        {/* Statistiques rapides */}
-        <div className="md:col-span-2 lg:col-span-3 bg-white rounded-lg shadow p-6">
-          <h2 className="text-xl font-semibold text-gray-800 mb-4">Aujourd'hui</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="text-center p-4 bg-green-50 rounded-lg">
-              <div className="text-2xl font-bold text-green-700">0€</div>
-              <div className="text-sm text-green-600">Recettes</div>
-            </div>
-            <div className="text-center p-4 bg-red-50 rounded-lg">
-              <div className="text-2xl font-bold text-red-700">0€</div>
-              <div className="text-sm text-red-600">Dépenses</div>
-            </div>
-            <div className="text-center p-4 bg-blue-50 rounded-lg">
-              <div className="text-2xl font-bold text-blue-700">0€</div>
-              <div className="text-sm text-blue-600">Bénéfice</div>
-            </div>
-            <div className="text-center p-4 bg-purple-50 rounded-lg">
-              <div className="text-2xl font-bold text-purple-700">0</div>
-              <div className="text-sm text-purple-600">Transactions</div>
-            </div>
-          </div>
-        </div>
+        
       </div>
       
       {/* Instructions */}

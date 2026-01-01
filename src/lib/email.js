@@ -33,11 +33,11 @@ export async function sendWeeklyReport(data) {
           
           <div class="card">
             <h2>💰 Synthèse Financière</h2>
-            <p><strong>Recettes totales:</strong> ${totals.recettes.toFixed(2)}€</p>
-            <p><strong>Dépenses totales:</strong> ${totals.depenses.toFixed(2)}€</p>
+            <p><strong>Recettes totales:</strong> ${totals.recettes.toFixed(2)}TND</p>
+            <p><strong>Dépenses totales:</strong> ${totals.depenses.toFixed(2)}TND</p>
             <p><strong>Bénéfice net:</strong> 
               <span class="${totals.benefice >= 0 ? 'positive' : 'negative'}">
-                ${totals.benefice.toFixed(2)}€
+                ${totals.benefice.toFixed(2)}TND
               </span>
             </p>
           </div>
@@ -49,7 +49,7 @@ export async function sendWeeklyReport(data) {
               ${recettesParService.map(r => `
                 <tr>
                   <td>${r.service}</td>
-                  <td>${r.total}€</td>
+                  <td>${r.total}TND</td>
                 </tr>
               `).join('')}
             </table>
@@ -62,7 +62,7 @@ export async function sendWeeklyReport(data) {
               ${depensesParCategorie.map(d => `
                 <tr>
                   <td>${d.categorie}</td>
-                  <td>${d.total}€</td>
+                  <td>${d.total}TND</td>
                 </tr>
               `).join('')}
             </table>

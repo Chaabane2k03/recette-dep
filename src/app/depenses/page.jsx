@@ -104,7 +104,7 @@ export default function DepensesPage() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm text-gray-500">Total dépenses</p>
-                <p className="text-2xl font-bold text-gray-900">{total.toFixed(2)}€</p>
+                <p className="text-2xl font-bold text-gray-900">{total.toFixed(2)}TND</p>
               </div>
               <div className="bg-red-100 p-3 rounded-lg">
                 <Euro className="w-8 h-8 text-red-600" />
@@ -253,7 +253,7 @@ export default function DepensesPage() {
                     {/* Montant */}
                     <div className="col-span-2 text-right">
                       <div className="text-xl font-bold text-red-700">
-                        {parseFloat(depense.montant).toFixed(2)}€
+                        {parseFloat(depense.montant).toFixed(2)}TND
                       </div>
                     </div>
 
@@ -288,7 +288,7 @@ export default function DepensesPage() {
                     {urgentCount > 0 && ` • ${urgentCount} urgente${urgentCount > 1 ? 's' : ''}`}
                   </div>
                   <div className="text-lg font-bold text-red-700">
-                    Total: {total.toFixed(2)}€
+                    Total: {total.toFixed(2)}TND
                   </div>
                 </div>
               </div>
@@ -372,7 +372,7 @@ export default function DepensesPage() {
                     {categorie === 'Autres' && '📝'}
                   </div>
                   <div className="text-sm text-gray-500">{categorie}</div>
-                  <div className="text-lg font-bold text-gray-900 mt-1">{totalCat.toFixed(2)}€</div>
+                  <div className="text-lg font-bold text-gray-900 mt-1">{totalCat.toFixed(2)}TND</div>
                   <div className="text-sm text-gray-600">{pourcentage}%</div>
                   <div className="text-xs text-gray-500 mt-1">
                     {depensesCat.length} dépense{depensesCat.length > 1 ? 's' : ''}

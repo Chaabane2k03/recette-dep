@@ -49,7 +49,7 @@ export default function DashboardPage() {
   const statCards = [
     {
       title: 'Recettes totales',
-      value: stats?.totals?.recettes ? `${stats.totals.recettes.toFixed(2)}€` : '0€',
+      value: stats?.totals?.recettes ? `${stats.totals.recettes.toFixed(2)}TND` : '0TND',
       icon: DollarSign,
       color: 'text-green-600',
       bgColor: 'bg-green-50',
@@ -57,7 +57,7 @@ export default function DashboardPage() {
     },
     {
       title: 'Dépenses totales',
-      value: stats?.totals?.depenses ? `${stats.totals.depenses.toFixed(2)}€` : '0€',
+      value: stats?.totals?.depenses ? `${stats.totals.depenses.toFixed(2)}TND` : '0TND',
       icon: CreditCard,
       color: 'text-red-600',
       bgColor: 'bg-red-50',
@@ -65,7 +65,7 @@ export default function DashboardPage() {
     },
     {
       title: 'Bénéfice net',
-      value: stats?.totals?.benefice ? `${stats.totals.benefice.toFixed(2)}€` : '0€',
+      value: stats?.totals?.benefice ? `${stats.totals.benefice.toFixed(2)}TND` : '0TND',
       icon: TrendingUp,
       color: stats?.totals?.benefice >= 0 ? 'text-blue-600' : 'text-red-600',
       bgColor: stats?.totals?.benefice >= 0 ? 'bg-blue-50' : 'bg-red-50',
@@ -176,7 +176,7 @@ export default function DashboardPage() {
                       <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                     ))}
                   </Pie>
-                  <Tooltip formatter={(value) => [`${value}€`, 'Montant']} />
+                  <Tooltip formatter={(value) => [`${value}TND`, 'Montant']} />
                   <Legend />
                 </PieChart>
               </ResponsiveContainer>
@@ -192,7 +192,7 @@ export default function DashboardPage() {
                   <CartesianGrid strokeDasharray="3 3" />
                   <XAxis dataKey="date" />
                   <YAxis />
-                  <Tooltip formatter={(value) => [`${value}€`, 'Montant']} />
+                  <Tooltip formatter={(value) => [`${value}TND`, 'Montant']} />
                   <Legend />
                   <Line
                     type="monotone"
@@ -230,7 +230,7 @@ export default function DashboardPage() {
                     </div>
                   </div>
                   <div className="text-lg font-bold text-green-700">
-                    {parseFloat(recette.montant).toFixed(2)}€
+                    {parseFloat(recette.montant).toFixed(2)}TND
                   </div>
                 </div>
               ))}
@@ -256,7 +256,7 @@ export default function DashboardPage() {
                     </div>
                   </div>
                   <div className="text-lg font-bold text-red-700">
-                    {parseFloat(depense.montant).toFixed(2)}€
+                    {parseFloat(depense.montant).toFixed(2)}TND
                   </div>
                 </div>
               ))}
